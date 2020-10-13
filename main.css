@@ -112,7 +112,7 @@ a, button {
 /* VIDEO SECTION */
 
 .section-stories {
-    height: 95vh;
+    height: 75vh;
     position: relative;
     padding: 15rem 0;
 }
@@ -166,4 +166,32 @@ a, button {
 .section-btn svg {
     width: var(--small);
     height: var(--small);
+}
+
+/* MOSAIC VIDEO */
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20vh;
+    padding-top: var(--xs);
+    padding-bottom: var(--xs);
+    background-color: var(--black);
+}
+
+.video {
+    background-image: url('https://img.youtube.com/vi/nZcejtAwxz4/maxresdefault.jpg');
+    max-width: 15.66%; 
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display:none !important;
 }
